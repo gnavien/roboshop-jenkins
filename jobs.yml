@@ -2,22 +2,16 @@
   hosts: localhost
   connection: local
   vars:
-    jobs:
+    sp_jobs:
       - roboshop-terraform
+
+    mp_jobs:
       - cart
       - catalogue
       - user
       - shipping
       - payment
       - frontend
-#  vars:
-#    sp_jobs:
-#      - roboshop-terraform
-#      - roboshop-ansible
-#      - roboshop-kubernetes
-#    mp_jobs:
 
-#      - aws-parameter-init-container
-#      - schema-load-init-container
   roles:
     - jenkins-jobs
