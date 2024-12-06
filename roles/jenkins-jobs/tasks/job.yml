@@ -8,5 +8,5 @@
     config: "{{ lookup('file', '/tmp/sbranch.xml') }}"
     name: "{{item}}"
     password: admin123
-    url: http://172.31.87.202:8080  # Private IP address
+    url: http://172.31.27.187:8080  # Private IP address
     user: admin
